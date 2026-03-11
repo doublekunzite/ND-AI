@@ -1,0 +1,172 @@
+# Update the HTML file to reference CSS/style.css (case-sensitive path)
+html_content = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurodivergent AI Systems</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">Neurodivergent AI Systems</a>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#stories">Stories</a></li>
+                <li><a href="#pilot">Free Pilot</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1>AI Systems for <span class="highlight">Brains That Work Differently</span></h1>
+            <p class="hero-subtitle">Free pilot program: Get your first personalized AI workflow built for your specific goals. I'll help you build systems designed around how your mind actually works.</p>
+            <div class="hero-cta">
+                <a href="#pilot" class="btn btn-primary">Start Free Pilot</a>
+                <a href="#how-it-works" class="btn btn-secondary">See How It Works</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <div class="quote-container">
+            <span class="quote-mark">"</span>
+            <blockquote>
+                Sadly, it gets me better than neurotypicals.
+            </blockquote>
+            <p class="quote-author">— An autistic professional describing her experience using AI to understand her burnout and navigate an overwhelming workplace</p>
+        </div>
+    </section>
+
+    <div class="trust-bar">
+        <p>Built for neurodivergent minds • Free pilot available • No medical advice, just practical tools</p>
+    </div>
+
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>From overwhelming chaos to organized clarity—built specifically for your cognitive style.</p>
+            </div>
+            
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">01</span>
+                    <h3>We Excavate Your Actual Problem</h3>
+                    <p>Most people say "I need to be more organized." We spend 15-30 minutes finding the specific friction—"I can't start tasks when I don't know how long they'll take" or "I freeze in meetings when the agenda changes."</p>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">02</span>
+                    <h3>I Build Your AI Interpreter</h3>
+                    <p>I create prompts and workflows tailored to your cognitive style, not generic productivity advice. ADHD systems look different from autistic systems look different from chronic illness systems.</p>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">03</span>
+                    <h3>You Get a Finished Toolkit</h3>
+                    <p>Not just chat transcripts—visual workflows, printable reference cards, Notion dashboards or beautifully designed guides you can actually use and share.</p>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">04</span>
+                    <h3>We Refine Until It Works</h3>
+                    <p>Two weeks of async support to catch where the system breaks and fix it. Most DIY AI experiments fail here—abandoned after the first frustration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	  <section class="kimi-note" id="kimi">
+        <div class="container">
+            <div class="kimi-content">
+                <h2>Why I Use Kimi AI</h2>
+                <div class="personal-note">
+                    <p>I have used many of the most popular AI tools, from ChatGPT to Gemini, and what stands out about Kimi is its willingness to challenge me and state difficult truths candidly. It has strong guardrails and will tell me directly when it is concerned about providing responses that could cause harm, even indirectly, or disrupt my stated goals.</p>
+                    <p>In my experience, it consistently demonstrates a sophisticated understanding of everything from workplace politics to the tendencies of neurodivergent minds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="pilot" id="pilot">
+        <div class="container">
+            <div class="section-header">
+                <h2>Start With the Pilot</h2>
+                <p>Test the waters. See if this works for your brain.</p>
+            </div>
+            
+            <div class="pilot-card">
+                <h3>Free Pilot Session</h3>
+                <div class="price">Free</div>
+                <p class="price-note">15-30 minute initial meeting • Limited spots available</p>
+                
+                <ul class="pilot-features">
+                    <li>One 15-30 minute discovery session (shorter if you prefer)</li>
+                    <li>Identify one high-friction area in your work, study, or daily life</li>
+                    <li>Build a custom AI workflow to address it</li>
+                    <li>Create prompts and systems you can use immediately</li>
+                    <li>Two weeks of async follow-up support</li>
+                    <li>Beautifully designed reference materials</li>
+                </ul>
+                
+                <a href="#contact" class="btn btn-primary" style="display: inline-block;">Apply for Pilot</a>
+                
+                <div class="pilot-note">
+                    <strong>In exchange:</strong> Honest feedback about what worked and what didn't. If it helps, a testimonial would be appreciated. This helps me refine the service while you get personalized support at no cost.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="contact">
+        <div class="about-content">
+            <h2>About</h2>
+            <p>I'm a digital communications professional with 4+ years coordinating programs and translating complex needs into workable solutions. I've been watching AI help my friends navigate burnout, executive dysfunction, and impossible-seeming challenges—not by fixing their brains or guaranteeing outcomes, but by giving them tools that actually fit how they think.</p>
+            
+            <div class="philosophy">
+                <p>AI can't change your material conditions. It can't guarantee a promotion, pass an exam for you, or eliminate burnout. What it can do is give you tools to manage the difficulty of living in a world built for neurotypical minds—systems that work with your brain instead of against it, validation when you need it, and structure that helps you keep moving without breaking.</p>
+            </div>
+            
+            <p><strong>I'm not a medical professional.</strong> I won't diagnose, treat symptoms, or replace your care team. I will help you leverage AI for organization, communication, and goal-setting—practical skills that complement your existing support.</p>
+            
+            <a href="mailto:alewisleong@gmail.com" class="contact-email">alewisleong@gmail.com</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Neurodivergent AI Systems. Built for different minds.</p>
+    </footer>
+</body>
+</html>'''
+
+# Save updated HTML with correct path
+with open('/mnt/kimi/output/index.html', 'w') as f:
+    f.write(html_content)
+
+print("Updated index.html to reference: CSS/style.css")
+print("\n=== REQUIRED FILE STRUCTURE ===")
+print("your-repo/")
+print("├── index.html")
+print("└── CSS/")
+print("    └── style.css")
+print("\n=== IMPORTANT ===")
+print("The CSS folder must be named 'CSS' (uppercase)")
+print("The CSS file must be named 'style.css' (lowercase)")
+print("GitHub Pages is case-sensitive with filenames")
