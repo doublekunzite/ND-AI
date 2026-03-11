@@ -75,7 +75,7 @@ nav .container {
     color: var(--accent);
 }
 
-/* Hero Section with Depth Effect */
+/* Hero Section with Layered Depth Effect */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -176,34 +176,34 @@ nav .container {
 .depth-shape {
     position: absolute;
     background: linear-gradient(135deg, var(--accent) 0%, #f97316 100%);
-    opacity: 0.25;
-    filter: blur(2px);
+    opacity: 0.3;
+    filter: blur(1px);
 }
 
 .depth-shape.shape-1 {
-    width: 250px;
-    height: 250px;
+    width: 280px;
+    height: 280px;
     border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-    top: -20%;
-    left: 5%;
+    top: -10%;
+    left: 0%;
     animation: morph 15s ease-in-out infinite;
 }
 
 .depth-shape.shape-2 {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    top: 10%;
-    right: 10%;
+    top: 0%;
+    right: 5%;
     animation: morph 12s ease-in-out infinite reverse;
 }
 
 .depth-shape.shape-3 {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-    top: 30%;
-    left: 25%;
+    top: 20%;
+    left: 20%;
     animation: morph 18s ease-in-out infinite;
 }
 
@@ -480,81 +480,6 @@ section {
     margin-bottom: 0;
 }
 
-.kimi-badge {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    background: var(--accent-dim);
-    border: 1px solid var(--accent);
-    border-radius: 20px;
-    color: var(--accent);
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-}
-
-/* Stories Section */
-.stories {
-    background: var(--bg-primary);
-}
-
-.story-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-}
-
-.story-card {
-    background: var(--bg-secondary);
-    border-radius: 20px;
-    padding: 2.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    position: relative;
-    overflow: hidden;
-}
-
-.story-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--accent), #f97316);
-}
-
-.story-card .tag {
-    display: inline-block;
-    padding: 0.4rem 0.8rem;
-    background: var(--accent-dim);
-    color: var(--accent);
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 1.5rem;
-}
-
-.story-card h3 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-    line-height: 1.4;
-}
-
-.story-card p {
-    color: var(--text-secondary);
-    line-height: 1.8;
-    font-size: 0.95rem;
-}
-
-.story-card .result {
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: var(--accent);
-    font-weight: 600;
-}
-
 /* Pilot Section */
 .pilot {
     background: var(--bg-secondary);
@@ -729,9 +654,19 @@ footer {
         display: none;
     }
 
-    .hero-visual {
-        width: 300px;
-        height: 300px;
+    .depth-shape.shape-1 {
+        width: 150px;
+        height: 150px;
+    }
+
+    .depth-shape.shape-2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .depth-shape.shape-3 {
+        width: 80px;
+        height: 80px;
     }
 
     .quote-mark {
@@ -744,8 +679,7 @@ footer {
         padding: 0 1rem;
     }
 
-    .steps,
-    .story-grid {
+    .steps {
         grid-template-columns: 1fr;
     }
 
