@@ -435,14 +435,25 @@ section {
     line-height: 1.7;
 }
 
-/* Kimi Note Section */
+/* Kimi Note Section - Distinct Visual Treatment */
 .kimi-note {
-    background: var(--bg-primary);
+    background: var(--bg-tertiary);
     margin: 0;
     max-width: 100%;
     padding: 5rem 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: relative;
+}
+
+.kimi-note::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), #f97316, var(--accent));
 }
 
 .kimi-note .container {
@@ -452,21 +463,37 @@ section {
 
 .kimi-content {
     text-align: center;
+    position: relative;
 }
 
 .kimi-content h2 {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
     font-weight: 600;
+    color: var(--accent);
+}
+
+.kimi-badge {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: var(--accent-dim);
+    border: 1px solid var(--accent);
+    border-radius: 20px;
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
 }
 
 .personal-note {
     background: var(--bg-secondary);
     padding: 2.5rem;
     border-radius: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-left: 4px solid var(--accent);
     text-align: left;
-    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .personal-note p {
@@ -478,6 +505,15 @@ section {
 
 .personal-note p:last-child {
     margin-bottom: 0;
+}
+
+.personal-note p:first-child::first-letter {
+    font-size: 3rem;
+    float: left;
+    line-height: 1;
+    padding-right: 0.5rem;
+    color: var(--accent);
+    font-weight: 700;
 }
 
 /* Pilot Section */
