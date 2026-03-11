@@ -507,15 +507,6 @@ section {
     margin-bottom: 0;
 }
 
-.personal-note p:first-child::first-letter {
-    font-size: 3rem;
-    float: left;
-    line-height: 1;
-    padding-right: 0.5rem;
-    color: var(--accent);
-    font-weight: 700;
-}
-
 /* Pilot Section */
 .pilot {
     background: var(--bg-secondary);
