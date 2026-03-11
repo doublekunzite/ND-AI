@@ -1,11 +1,11 @@
-# Update the HTML file to reference CSS/style.css (case-sensitive path)
-html_content = '''<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neurodivergent AI Systems</title>
     <link rel="stylesheet" href="CSS/style.css">
+<base target="_blank">
 </head>
 <body>
     <nav>
@@ -49,7 +49,7 @@ html_content = '''<!DOCTYPE html>
             <blockquote>
                 Sadly, it gets me better than neurotypicals.
             </blockquote>
-            <p class="quote-author">— An autistic professional describing her experience using AI to understand her burnout and navigate an overwhelming workplace</p>
+            <p class="quote-author">— An autistic professional on using AI to navigate workplace overstimulation</p>
         </div>
     </section>
 
@@ -154,19 +154,4 @@ html_content = '''<!DOCTYPE html>
         <p>&copy; 2026 Neurodivergent AI Systems. Built for different minds.</p>
     </footer>
 </body>
-</html>'''
-
-# Save updated HTML with correct path
-with open('/mnt/kimi/output/index.html', 'w') as f:
-    f.write(html_content)
-
-print("Updated index.html to reference: CSS/style.css")
-print("\n=== REQUIRED FILE STRUCTURE ===")
-print("your-repo/")
-print("├── index.html")
-print("└── CSS/")
-print("    └── style.css")
-print("\n=== IMPORTANT ===")
-print("The CSS folder must be named 'CSS' (uppercase)")
-print("The CSS file must be named 'style.css' (lowercase)")
-print("GitHub Pages is case-sensitive with filenames")
+</html>
